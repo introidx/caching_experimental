@@ -30,7 +30,7 @@ public class AerospikeConfiguration {
     public AerospikeClient aerospikeClient() {
         ClientPolicy clientPolicy = new ClientPolicy();
         clientPolicy.failIfNotConnected = true;
-        return new AerospikeClient(clientPolicy, "localhost", 3000);
+        return new AerospikeClient(clientPolicy, "127.0.0.1", 3000);
     }
 
     @Bean
